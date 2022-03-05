@@ -11,7 +11,7 @@ metadata:
   uid: 731888df-2b86-418d-8501-26c57cf76e30
 spec:
   progressDeadlineSeconds: 600
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ spec:
         app: do100-versioned-hello
     spec:
       containers:
-      - image: quay.io/redhattraining/do100-versioned-hello:v1.0
+      - image: quay.io/redhattraining/do100-versioned-hello:v1.1
         imagePullPolicy: IfNotPresent
         name: do100-versioned-hello
         resources: {}
